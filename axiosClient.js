@@ -6,7 +6,7 @@ dotenv.config();
 const axiosClient = axios.create({
   baseURL: process.env.VISION_PREDICTION_ENDPOINT,
   timeout: 4000,
-  //inform azure im sending JSON payload
+  //inform azure that I'm sending JSON payload
   headers: {
     "Prediction-Key": process.env.VISION_PREDICTION_KEY,
     "Content-Type": "application/json",
